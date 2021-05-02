@@ -1,19 +1,18 @@
 {
   "name": "samling",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Serverless SAML testing",
-  "author": "Capriza Inc. <backend@capriza.com>",
+  "author": "fujifischer <fujifischer@gmail.com>",
   "maintainers": [
-    "Nadav Fischer <nadav.fischer@capriza.com>",
-    "Yuval Carmel <yuval.carmel@capriza.com>"
+    "Nadav Fischer <fujifischer@gmail.com>"
   ],
-  "homepage": "http://github.com/capriza/samling",
+  "homepage": "http://github.com/fujifish/samling",
   "repository": {
     "type": "git",
-    "url": "http://github.com/capriza/samling.git"
+    "url": "http://github.com/fujifish/samling.git"
   },
   "bugs": {
-    "url": "https://github.com/capriza/samling/issues"
+    "url": "https://github.com/fujifish/samling/issues"
   },
   "keywords": [
     "SAML",
