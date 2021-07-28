@@ -4,6 +4,7 @@ window.CLIPBOARDJS = require('clipboard-js');
 window.SAML = require('./saml');
 const COOKIE_NAME = 'samling';
 var meta = fs.readFileSync('./public/metadata.xml.tpl').toString("utf8");
+var hostingUrl = fs.readFileSync('./hostingUrl.txt').toString("utf8");
 
 var queryParams = {};
 
@@ -87,7 +88,7 @@ function _getSessionExpiration(format) {
 
 function _updateMetadata(cert) {
   var flatCert = cert.toString().replace("-----BEGIN CERTIFICATE-----", "").replace("-----END CERTIFICATE-----", "").replace(/[\s]/g, "");
-  $('#idpMetadata').text(meta.replace("_CERTIFICATE_", flatCert));
+  $('#idpMetadata').text(meta.replace("_CERTIFICATE_", flatCert).replace(/_HOSTING_URL_/g, hostingUrl));
 }
 
 $(function() {
